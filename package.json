@@ -1,0 +1,36 @@
+{
+  "name": "tpl",
+  "displayName": "TPL",
+  "description": "TPL programming language",
+  "icon": "images/colorforth.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tpl",
+        "aliases": [
+          "TPL Programming Language",
+          "tpl"
+        ],
+        "extensions": [
+          ".tpl",
+          ".ga"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tpl",
+        "scopeName": "source.tpl",
+        "path": "./syntaxes/tpl.tmLanguage.json"
+      }
+    ]
+  }
+}
