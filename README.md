@@ -1,65 +1,60 @@
-# tpl README
+# Examples
 
-This is the README for your extension "tpl". After writing up a brief description, we recommend including the following sections.
+## fibonacci.ga
 
-## Features
+Prints the first 15 numbers of the Fibonacci sequence
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## port-execution.ga
+Simple example of using port execution to
+utilize an adjacent node as a random access 64 word array.
 
-For example if there is an image subfolder under your extension project workspace:
+## 3-node-ram.ga, 3-node-ram-ASM.ga
+3 node ram cluster.
+192 addressable words, word and byte addressable.
 
-\!\[feature X\]\(images/feature-x.png\)
+3-node-ram-ASM.ga is the same thing with ASM syntax
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## square_waves.ga
+Various ways of toggling a pin, with timing info.
 
-## Requirements
+## sram-demo.ga
+example reading and writing SRAM
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## variables.ga
+Simple example showing one way of implementing variables
 
-## Extension Settings
+## counter.ga
+Uses a crystal to maintain time.
+Prints counter and debug values over serial.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## fast-ram-node.ga
+60 word RAM node with small client code (2 words)
 
-For example:
+## racecar.ga
+An example using all the nodes. Used to measure the time to
+send a number around the chip in a loop.
 
-This extension contributes the following settings:
+# library examples
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 708serial.ga
+serial communciation from node 708
 
-## Known Issues
+## 708serial-ASM.ga
+ASM syntax version of 708serial.ga
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## 600serial.ga
+Like 708serial.ga, but for node 600
 
-## Release Notes
+## 715crystal.ga
+Drives a 32.768 khz watch crystal from pin 715.17
 
-Users appreciate release notes as you update your extension.
+see `counter.ga` for a running example that uses the same
+technique.
 
-### 1.0.0
+## sram.ga, sram-minimal-master.ga
 
-Initial release of ...
+`sram.ga` main sram control.
 
-### 1.0.1
+`sram-minimal-master.ga` minimal capability SRAM master.
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+See `sram-demo.ga` for example usage of these files.

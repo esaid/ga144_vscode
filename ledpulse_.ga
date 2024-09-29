@@ -1,0 +1,16 @@
+
+\  require delay
+\  require maths
+\ demo Led Pulse
+node 500
+: ledpulse
+    0x30000 !b . . \ led on
+    pause
+    0x20000 !b . . \ led off
+    pause
+    ledpulse
+	
+	
+: pause	5000 for 10000 	for next . . next ;
+
+

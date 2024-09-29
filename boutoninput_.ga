@@ -1,0 +1,16 @@
+
+\  require delay
+\ ga boutoninput.ga --port /dev/ttyUSB0
+node 708
+include 708serial.ga
+: main
+    io b! south a!
+    : loop @ send drop loop ;
+\ demo bouton input
+node 600
+: init east a! io b! dup or !b
+: input @b 0x20000 and if drop 1 then ! input ; 
+
+\ Link 600 708
+
+
