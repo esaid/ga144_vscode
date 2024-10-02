@@ -26,7 +26,7 @@ installation in vscode CTRL + Shift + P
 install from vsix
 select the ga144.vsix file.
 
-![Screenshoot](https://github.com/esaid/ga144_vscode/raw/main/images/installation_ga144vsix.webm)
+![Screenshoot](https://github.com/esaid/ga144_vscode/raw/main/images/installation_ga144vsix.gif)
 
 ## Extension Settings
 
